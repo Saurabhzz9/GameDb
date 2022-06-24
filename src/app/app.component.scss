@@ -1,0 +1,29 @@
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+  }
+
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background: url("../assets/images/platforms/393989.jpg") no-repeat;
+      background-size: cover;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #background-video { 
+        width:auto;
+        height: 100%;
+    }
+}
